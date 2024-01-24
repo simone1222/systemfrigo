@@ -1,3 +1,8 @@
+<header>
+  <!-- Aggiungi qui il contenuto dell'header -->
+  <h1>Il mio header</h1>
+</header>
+
 <main id="main-container" class="d-flex" style="margin-top: 80px">
   <mat-tab-group>
     
@@ -26,3 +31,15 @@
     </mat-tab>
   </mat-tab-group>
 </main>
+
+<footer>
+  <form  [formGroup]="datiUtente">
+  <div class="customer">
+    <h2>Contattaci</h2>
+    <p><strong>Email:</strong> <input style="width: 300px;margin-left: 92px;" type="text" formControlName = "email"></p>
+    <p><strong>Numero:</strong> <input style="width: 300px;margin-left: 72px;" type="text" formControlName = "numero"></p>
+    <p><strong>Guasto:</strong> <input style="width: 300px;margin-left: 30px;" type="text" formControlName = "guasto"></p>
+    <button type="submit" (click)="inviaEmail(datiUtente)">Invia e-mail</button>
+  </div>
+</form>
+</footer>

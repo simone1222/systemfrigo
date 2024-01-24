@@ -12,6 +12,8 @@ import { ServiziComponent } from './menuComponent/servizi/servizi.component';
 import { TelegestioneComponent } from './menuComponent/telegestione/telegestione.component';
 import { RealizzazioniComponent } from './menuComponent/realizzazioni/realizzazioni.component';
 import { ContattiComponent } from './menuComponent/contatti/contatti.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 const routes: Routes = [
@@ -36,6 +38,7 @@ const routes: Routes = [
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTabsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
