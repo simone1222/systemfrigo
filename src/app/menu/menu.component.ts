@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 import * as emailjs from 'emailjs-com';
 
@@ -9,11 +9,10 @@ import * as emailjs from 'emailjs-com';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
-export class MenuComponent implements OnInit{
+export class MenuComponent implements OnInit {
  
-  
   datiUtente!:UntypedFormGroup;
-
+   
 
 
   ngOnInit(): void {
@@ -24,6 +23,8 @@ export class MenuComponent implements OnInit{
     }); 
   }
 
+   // Funzione chiamata dopo che la vista è stata inizializzata
+  
   /*  inviaEmail(form:UntypedFormGroup) {
      if(form.valid){
       console.log("inviata",form)
