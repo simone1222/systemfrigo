@@ -2,10 +2,7 @@ import { AfterViewInit, Component } from '@angular/core';
 import { Map, Overlay, View } from 'ol';
 import TileLayer from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
-import { fromLonLat, useGeographic } from 'ol/proj';  // Importa la funzione useGeographic
-import TileWMS from 'ol/source/TileWMS';
-
-
+import { useGeographic } from 'ol/proj';  // Importa la funzione useGeographic
 
 
 @Component({
@@ -20,8 +17,6 @@ export class HomeComponent implements AfterViewInit {
   lng = 15.524375030686777;
   zoom = 15; // livello di zoom
   map!: Map;
-  isSatelliteView: boolean = false;
-
 
 
   ngAfterViewInit() {
@@ -29,7 +24,7 @@ export class HomeComponent implements AfterViewInit {
     this.initMap();
   }
 
-  private initMap(): void {
+   private initMap(): void {
     //Visualizzazione mappa
     this.map = new Map({
       target: 'map',
@@ -70,23 +65,5 @@ export class HomeComponent implements AfterViewInit {
     this.map.addOverlay(label);
   });
   
-  }
-
- /*  toggleMapStyle(): void {
-    // Cambia lo stile della mappa tra normale e satellitare
-    this.isSatelliteView = !this.isSatelliteView;
-
-    if (this.isSatelliteView) {
-      this.map.getLayers().setAt(0, new TileLayer({
-        source: new TileWMS({
-          url: 'https://your-satellite-tile-service-url',
-          params: { 'LAYERS': 'satellite' }
-        })
-      }));
-    } else {
-      this.map.getLayers().setAt(0, new TileLayer({
-        source: new OSM()
-      }));
-    }
-  } */
+  } 
 }
