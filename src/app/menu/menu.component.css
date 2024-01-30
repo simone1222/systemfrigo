@@ -6,13 +6,25 @@
   
   .sidebar-left,
   .sidebar-right {
-    width: 200px;  /* Imposta la larghezza delle sidebar sinistra e destra */
-    background-color: #f0f0f0;  /* Colore di sfondo delle sidebar */
-    padding: 10px;  /* Aggiunge spaziatura interna alle sidebar */
+    width: 200px; 
+    background-color: beige; 
+    padding: 10px; 
   }
   
   .main-content {
     flex: 1;  /* Flessibilità massima per occupare lo spazio rimanente */
     padding: 10px;  /* Aggiunge spaziatura interna al contenuto principale */
+    background-color: beige;
+
+  }
+  body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+  }
+  header, footer, mat-tab-group {
+    margin: 0;
+    padding: 0;
   }
   
