@@ -38,10 +38,18 @@
     <div style="text-align: right;margin-right: 50px;">
   <form  [formGroup]="datiUtente">
     <h2 style="margin-right: 550px;">Contattaci</h2>
-    <p><strong style="margin-right: 20px;">Email:</strong> <input style="margin-right: 400px;" type="text" formControlName = "email"></p>
-    <p><strong style="margin-right: 20px;">Numero:</strong> <input style="margin-right: 400px;" type="text" formControlName = "numero"></p>
-    <p><strong style="margin-right: 20px;">Guasto:</strong> <input style="margin-right: 400px;" type="text" formControlName = "guasto"></p>
-    <button style="margin-right: 400px;margin-bottom: 20px;" type="submit" (click)="inviaEmail(datiUtente)">Invia e-mail</button>
+
+    <p><strong style="margin-right: 20px;">Email:</strong>
+       <input style="margin-right: 400px;" type="text" formControlName = "email"></p>
+
+    <p><strong style="margin-right: 20px;">Numero:</strong>
+       <input style="margin-right: 400px;" type="text" formControlName = "numero"></p>
+    <p>
+      <strong style="margin-right: 20px;">Guasto:</strong> 
+      <textarea style="margin-right: 400px;" formControlName="guasto"></textarea>
+    </p>
+        <button style="margin-right: 400px;margin-bottom: 20px;" type="submit" 
+        (click)="inviaEmail(datiUtente)">Invia e-mail</button>
   </form>
 </div> 
 </footer>
