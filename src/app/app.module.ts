@@ -13,6 +13,7 @@ import { TelegestioneComponent } from './menuComponent/telegestione/telegestione
 import { RealizzazioniComponent } from './menuComponent/realizzazioni/realizzazioni.component';
 import { ContattiComponent } from './menuComponent/contatti/contatti.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http'
 
 
 
@@ -39,6 +40,7 @@ const routes: Routes = [
     BrowserAnimationsModule,
     MatTabsModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

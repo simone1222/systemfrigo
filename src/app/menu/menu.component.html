@@ -33,25 +33,16 @@
     </mat-tab>
   </mat-tab-group>
 
-<footer style="background-color: beige;">
+
+  <footer style="position: fixed; bottom: 0; right: 0; background-color: beige;">
+    <div style="text-align: right;margin-right: 50px;">
   <form  [formGroup]="datiUtente">
-  <div class="customer">
-    <h2>Contattaci</h2>
-    <!-- <p><strong>Email:</strong> <input style="width: 300px;margin-left: 92px;" type="text" formControlName = "email"></p>
-    <p><strong>Numero:</strong> <input style="width: 300px;margin-left: 72px;" type="text" formControlName = "numero"></p>
-    <p><strong>Guasto:</strong> <input style="width: 300px;margin-left: 30px;" type="text" formControlName = "guasto"></p>
-    <button type="submit" (click)="inviaEmail(datiUtente)">Invia e-mail</button> -->
-    <p>SYSTEMFRIGO S.R.L. DI LANIA E SERGENTE</p>
-      <p>IMPIANTI DI REFRIGERAZIONE VENDITA ED ASSISTENZA</p>
-      
-     <p>SEDE VIA ANNIBALE ,27/A CAMARO SUP. 98151 MESSINA</p> 
-      
-     <p>TEL 090.620167 TEL/FAX 090.9031250 SYSTEMFRIGO@ALICE.IT - SYSTEMFRIGO@HOTMAIL.IT</p> 
-      
-      <p>REGISTRO DITTE DI MESSINA N. 9784/1999</p>
-      
-      <p>PARTITA IVA 02119680839</p>
-  </div>
-</form>
+    <h2 style="margin-right: 550px;">Contattaci</h2>
+    <p><strong style="margin-right: 20px;">Email:</strong> <input style="margin-right: 400px;" type="text" formControlName = "email"></p>
+    <p><strong style="margin-right: 20px;">Numero:</strong> <input style="margin-right: 400px;" type="text" formControlName = "numero"></p>
+    <p><strong style="margin-right: 20px;">Guasto:</strong> <input style="margin-right: 400px;" type="text" formControlName = "guasto"></p>
+    <button style="margin-right: 400px;margin-bottom: 20px;" type="submit" (click)="inviaEmail(datiUtente)">Invia e-mail</button>
+  </form>
+</div> 
 </footer>
 </main>
