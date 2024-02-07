@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  UntypedFormControl,
-  UntypedFormGroup,
-  Validators,
-} from '@angular/forms';
+import {UntypedFormControl,UntypedFormGroup,Validators,} from '@angular/forms';
 import { EmailService } from '../email.service';
 
 @Component({
@@ -36,7 +32,7 @@ export class MenuComponent implements OnInit {
       const numero = String(datiUtente.get('numero')?.value);
       const guasto = String(datiUtente.get('guasto')?.value);
       this.emailService.invioEmail(email, numero, guasto).subscribe((c) => {
-        
+        console.log(c)
       });
     }
   }
